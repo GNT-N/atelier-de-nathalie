@@ -27,6 +27,11 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
 body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(
@@ -37,12 +42,5 @@ body {
         rgb(var(--background-start-rgb));
     font-style: Dancing-script;
 
-    background-color: #6adecd;
-}
-
-.content_slider {
-    max-width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
     background-color: #6adecd;
 }
