@@ -11,16 +11,12 @@ export default function Home() {
                 // background écran accueil page home
                 style={{ backgroundImage: `url("/images/bg_ete.jpg")` }}
             >
-                <h1 className="my-auto">L'Atelier De Nathalie</h1>
+                <h1 className="my-auto">L&apos;Atelier De Nathalie</h1>
                 <p className="w-2/3 text-center">
                     Considérant que la reconnaissance de la dignité inhérente à
                     tous les membres de la famille humaine et de leurs droits
                     égaux et inaliénables constitue le fondement de la liberté,
-                    de la justice et de la paix dans le monde, Considérant qu’il
-                    est essentiel que les droits de l’homme soient protégés par
-                    un régime de droit pour que l’homme ne soit pas contraint,
-                    en suprême recours, à la révolte contre la tyrannie et
-                    l’oppression,{" "}
+                    de la justice et de la paix dans le monde.{" "}
                 </p>
                 <div className="my-auto">
                     <Link href="/contact">
@@ -43,7 +39,7 @@ export default function Home() {
                     >
                         <Link href="/vegetaux_personnels">
                             <h2 className="text-center mt-16">
-                                Création avec des végétaux issue de ma
+                                Création avec avec des végétaux issue de ma
                                 production
                             </h2>
                         </Link>
