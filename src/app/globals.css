@@ -21,17 +21,6 @@
     padding: 0;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-    font-size: 40px;
-}
-
-h2 {
-    font-size: x-large;
-    font-weight: bold;
-}
-
 body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(
@@ -40,7 +29,12 @@ body {
             rgb(var(--background-end-rgb))
         )
         rgb(var(--background-start-rgb));
-    font-style: Dancing-script;
+    font-family: "Pinyon Script", cursive;
+}
+h1 {
+    font-size: xx-large;
+}
 
-    background-color: #6adecd;
+h2 {
+    font-size: x-large;
 }

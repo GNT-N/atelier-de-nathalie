@@ -5,7 +5,7 @@ const ScrollableViewport = ({ children }) => {
     const style = {
         height: "100vh",
         width: "100vw",
-        overflowY: "scroll",
+        overflow: "auto",
         scrollSnapType: "y mandatory",
     };
 
