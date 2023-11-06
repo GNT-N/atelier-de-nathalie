@@ -22,12 +22,12 @@
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
+    color: #5a1735;
     background: linear-gradient(
         to bottom,
         #f4f6f7 0%,
         #ffbdfd 50%,
-        #fb4fca 100%
+        #ad8196 100%
     );
 
     font-family: "Pinyon Script", cursive;
@@ -37,5 +37,8 @@ h1 {
 }
 
 h2 {
+    font-size: x-large;
+}
+p {
     font-size: x-large;
 }

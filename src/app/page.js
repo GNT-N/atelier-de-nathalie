@@ -30,10 +30,10 @@ export default function Home() {
             <section
                 className={`${styles.section} font-script flex flex-col justify-center items-center h-screen bg-cover`}
                 // background écran accueil page home
-                style={{ backgroundImage: `url("/images/bg_ete.jpg")` }}
+                style={{ backgroundImage: `url("/images/test_accueil.jpg")` }}
             >
                 <h1 className="my-auto">L&apos;Atelier De Nathalie</h1>
-                <p className="w-2/3 text-center">
+                <p className="w-2/3 text-center font-size:3xl">
                     Considérant que la reconnaissance de la dignité inhérente à
                     tous les membres de la famille humaine et de leurs droits
                     égaux et inaliénables constitue le fondement de la liberté,

@@ -24,10 +24,10 @@ export default function Personnels() {
                         style={{ position: "relative" }}
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-no-repeat bg-center  opacity-60`}
                             style={{
                                 // background écran accueil Création avec des végétaux issue de ma production
-                                backgroundImage: `url("/images/bg_vege_com.jpg")`,
+                                backgroundImage: `url("/images/bg_vege_perso.jpg")`,
                             }}
                         ></div>
                         <h1
