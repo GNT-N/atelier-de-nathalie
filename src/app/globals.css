@@ -24,11 +24,12 @@
 body {
     color: rgb(var(--foreground-rgb));
     background: linear-gradient(
-            to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))
-        )
-        rgb(var(--background-start-rgb));
+        to bottom,
+        #f4f6f7 0%,
+        #ffbdfd 50%,
+        #fb4fca 100%
+    );
+
     font-family: "Pinyon Script", cursive;
 }
 h1 {
