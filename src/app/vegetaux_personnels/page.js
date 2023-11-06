@@ -74,6 +74,7 @@ export default function Personnels() {
                     <section className={styles.section}>
                         <p className="mt-96">Page Photos</p>
                     </section>
+
                     {/* ------------------------------ Fin page photos Printemps ------------------------------ */}
 
                     <hr className="w-2/3 mx-auto border-none" />

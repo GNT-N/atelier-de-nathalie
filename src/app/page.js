@@ -30,7 +30,7 @@ export default function Home() {
             <section
                 className={`${styles.section} font-script flex flex-col justify-center items-center h-screen bg-cover`}
                 // background écran accueil page home
-                style={{ backgroundImage: `url("/images/test_accueil.jpg")` }}
+                style={{ backgroundImage: `url("/images/titi.jpg")` }}
             >
                 <h1 className="my-auto">L&apos;Atelier De Nathalie</h1>
                 <p className="w-2/3 text-center font-size:3xl">
