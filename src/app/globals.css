@@ -22,7 +22,7 @@
 }
 
 body {
-    color: #5a1735;
+    color: wheat;
     background: linear-gradient(
         to bottom,
         #f4f6f7 0%,
@@ -32,13 +32,11 @@ body {
 
     font-family: "Pinyon Script", cursive;
 }
-h1 {
-    font-size: xx-large;
-}
 
 h2 {
-    font-size: x-large;
+    color: #5a1735;
 }
-p {
-    font-size: x-large;
+
+h3 {
+    color: white;
 }

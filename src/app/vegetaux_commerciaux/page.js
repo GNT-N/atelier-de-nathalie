@@ -7,7 +7,13 @@ import styles from "../../../styles/ScrollableViewport.module.css";
 export default function Commerciaux() {
     return (
         <>
-            <div className="fixed top-0 right-0 p-4" style={{ zIndex: 999 }}>
+            <div
+                className="fixed top-0 right-0 bg-cover bg-center p-8"
+                style={{
+                    zIndex: 999,
+                    backgroundImage: `url("/pancarte.png")`,
+                }}
+            >
                 <div>
                     <Link href="/">Accueil</Link>
                 </div>
@@ -24,7 +30,7 @@ export default function Commerciaux() {
                         style={{ position: "relative" }}
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran accueil Création avec des végétaux issue du commerce
                                 backgroundImage: `url("/images/bg_vege_com.jpg")`,

@@ -30,10 +30,10 @@ export default function Home() {
             <section
                 className={`${styles.section} font-script flex flex-col justify-center items-center h-screen bg-cover`}
                 // background écran accueil page home
-                style={{ backgroundImage: `url("/images/titi.jpg")` }}
+                style={{ backgroundImage: `url("/images/test_accueil.jpg")` }}
             >
-                <h1 className="my-auto">L&apos;Atelier De Nathalie</h1>
-                <p className="w-2/3 text-center font-size:3xl">
+                <h1 className="my-auto text-4xl">L&apos;Atelier De Nathalie</h1>
+                <p className="w-2/3 text-center text-2xl">
                     Considérant que la reconnaissance de la dignité inhérente à
                     tous les membres de la famille humaine et de leurs droits
                     égaux et inaliénables constitue le fondement de la liberté,
@@ -54,24 +54,86 @@ export default function Home() {
             {isMobile ? (
                 <>
                     <section className={styles.section}>
-                        <div className="font-script flex items-center justify-center grid lg:grid-cols-2 min-h-screen sm:grid-cols-1">
+                        <div className="font-script flex items-center justify-center min-h-screen">
                             <div
-                                className="border rounded lg:h-2/3 lg:w-3/5 sm:h1/3 sm:w-4/5 p-4 mx-auto"
+                                className="bg-contain bg-center bg-no-repeat p-4 mx-auto"
                                 // bakcground card Création avec des végétaux issue de ma production
                                 style={{
-                                    backgroundImage: `url("/images/")`,
+                                    backgroundImage: `url("/images/flower.png")`,
                                 }}
                             >
                                 <Link href="/vegetaux_personnels">
-                                    <h2 className="text-center lg:mt-16 sm:mt-4">
+                                    <h2 className="text-center text-xl mt-4">
                                         Création avec avec des végétaux issue de
                                         ma production
                                     </h2>
                                 </Link>
 
-                                <div className="grid text-center justify-center lg:grid-cols-2 lg:mt-20 sm:grid-cols-1 ">
+                                <div className="grid justify-center mt-16">
                                     <Link
-                                        className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
+                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
+                                        href="/vegetaux_personnels#printemps"
+                                        style={{
+                                            // background card Création avec des végétaux issue de ma production - Printemps
+                                            backgroundImage: `url("/images/printemp.jpg")`,
+                                        }}
+                                    >
+                                        <h3>Printemps</h3>
+                                    </Link>
+                                    <Link
+                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
+                                        href="/vegetaux_personnels#ete"
+                                        style={{
+                                            // background card Création avec des végétaux issue de ma production - Été
+                                            backgroundImage: `url("/images/ete.jpg")`,
+                                        }}
+                                    >
+                                        <h3>Été</h3>
+                                    </Link>
+                                    <Link
+                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
+                                        href="/vegetaux_personnels#automne"
+                                        style={{
+                                            // background card Création avec des végétaux issue de ma production - Automne
+                                            backgroundImage: `url("/images/automne.jpg")`,
+                                        }}
+                                    >
+                                        <h3>Automne</h3>
+                                    </Link>
+                                    <Link
+                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
+                                        href="/vegetaux_personnels#hiver"
+                                        style={{
+                                            // background card Création avec des végétaux issue de ma production - Hiver
+                                            backgroundImage: `url("/images/hiver.jpg")`,
+                                        }}
+                                    >
+                                        <h3>Hiver</h3>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className={styles.section}>
+                        <div className="font-script flex items-center justify-center min-h-screen">
+                            <div
+                                className="bg-contain bg-center bg-no-repeat p-4 mx-auto"
+                                // background card Création avec des végétaux issue du commerce
+                                style={{
+                                    backgroundImage: `url("/images/flower.png")`,
+                                }}
+                            >
+                                <Link href="/vegetaux_commerciaux">
+                                    <h2 className="text-center text-xl mt-4">
+                                        Création avec des végétaux issue du
+                                        commerce
+                                    </h2>
+                                </Link>
+
+                                <div className="grid justify-center">
+                                    <Link
+                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
                                         href="/vegetaux_personnels#printemps"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Printemps
@@ -81,7 +143,7 @@ export default function Home() {
                                         Printemps
                                     </Link>
                                     <Link
-                                        className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
+                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
                                         href="/vegetaux_personnels#ete"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Été
@@ -91,7 +153,7 @@ export default function Home() {
                                         Été
                                     </Link>
                                     <Link
-                                        className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
+                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
                                         href="/vegetaux_personnels#automne"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Automne
@@ -101,7 +163,7 @@ export default function Home() {
                                         Automne
                                     </Link>
                                     <Link
-                                        className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
+                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
                                         href="/vegetaux_personnels#hiver"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Hiver
@@ -114,90 +176,28 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-
-                    <section className={styles.section}>
-                        <div className="font-script flex items-center justify-center grid lg:grid-cols-2 min-h-screen sm:grid-cols-1">
-                            <div
-                                className="bg-cover bg-center lg:h-2/3 lg:w-3/5 sm:h1/3 sm:w-4/5 p-4 mx-auto p-4 mx-auto"
-                                // background card Création avec des végétaux issue du commerce
-                                style={{
-                                    backgroundImage: `url("/images/flower.png")`,
-                                }}
-                            >
-                                <Link href="/vegetaux_commerciaux">
-                                    <h2 className="text-center lg:mt-16 sm:mt-4">
-                                        Création avec des végétaux issue du
-                                        commerce
-                                    </h2>
-                                </Link>
-
-                                <div className="grid text-center justify-center lg:grid-cols-2 lg:mt-20 sm:grid-cols-1 ">
-                                    <Link
-                                        className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
-                                        href="/vegetaux_personnels#printemps"
-                                        style={{
-                                            // background card Création avec des végétaux issue de ma production - Printemps
-                                            backgroundImage: `url("/images/printemp.jpg")`,
-                                        }}
-                                    >
-                                        Printemps
-                                    </Link>
-                                    <Link
-                                        className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
-                                        href="/vegetaux_personnels#ete"
-                                        style={{
-                                            // background card Création avec des végétaux issue de ma production - Été
-                                            backgroundImage: `url("/images/ete.jpg")`,
-                                        }}
-                                    >
-                                        Été
-                                    </Link>
-                                    <Link
-                                        className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
-                                        href="/vegetaux_personnels#automne"
-                                        style={{
-                                            // background card Création avec des végétaux issue de ma production - Automne
-                                            backgroundImage: `url("/images/automne.jpg")`,
-                                        }}
-                                    >
-                                        Automne
-                                    </Link>
-                                    <Link
-                                        className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
-                                        href="/vegetaux_personnels#hiver"
-                                        style={{
-                                            // background card Création avec des végétaux issue de ma production - Hiver
-                                            backgroundImage: `url("/images/hiver.jpg")`,
-                                        }}
-                                    >
-                                        Hiver
-                                    </Link>
-                                </div>
-                            </div>{" "}
-                        </div>
-                    </section>
                 </>
             ) : (
                 // Le contenu pour les écrans PC
                 <section className={styles.section}>
-                    <div className="font-script flex items-center justify-center grid lg:grid-cols-2 min-h-screen sm:grid-cols-1">
+                    <div className="font-script flex items-center grid grid-cols-2 min-h-screen">
                         <div
-                            className="bg-cover bg-center rounded lg:h-2/3 lg:w-4/5 sm:h1/3 sm:w-4/5 p-4 mx-auto"
+                            className="bg-cover h-2/3 w-4/5 p-4 mx-auto"
                             // bakcground card Création avec des végétaux issue de ma production
                             style={{
                                 backgroundImage: `url("/images/flower.png")`,
                             }}
                         >
                             <Link href="/vegetaux_personnels">
-                                <h2 className="text-center mt-10">
+                                <h2 className="text-center text-2xl mt-10">
                                     Création avec avec des végétaux issue de ma
                                     production
                                 </h2>
                             </Link>
 
-                            <div className="grid text-center lg:grid-cols-2 lg:mt-10 sm:grid-cols-1 ">
+                            <div className="grid grid-cols-2 text-center mt-10">
                                 <Link
-                                    className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
+                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
                                     href="/vegetaux_personnels#printemps"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Printemps
@@ -207,7 +207,7 @@ export default function Home() {
                                     Printemps
                                 </Link>
                                 <Link
-                                    className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
+                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
                                     href="/vegetaux_personnels#ete"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Été
@@ -217,7 +217,7 @@ export default function Home() {
                                     Été
                                 </Link>
                                 <Link
-                                    className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
+                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
                                     href="/vegetaux_personnels#automne"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Automne
@@ -227,7 +227,7 @@ export default function Home() {
                                     Automne
                                 </Link>
                                 <Link
-                                    className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 mx-2 p-16"
+                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
                                     href="/vegetaux_personnels#hiver"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Hiver
@@ -240,54 +240,54 @@ export default function Home() {
                         </div>
 
                         <div
-                            className="bg-cover bg-center h-2/3 w-4/5 p-4 mx-auto"
+                            className="bg-cover h-2/3 w-4/5 p-4 mx-auto"
                             // background card Création avec des végétaux issue du commerce
                             style={{
                                 backgroundImage: `url("/images/flower.png")`,
                             }}
                         >
                             <Link href="/vegetaux_commerciaux">
-                                <h2 className="text-center mt-8">
+                                <h2 className="text-center text-2xl mt-10">
                                     Création avec des végétaux issue du commerce
                                 </h2>
                             </Link>
 
-                            <div className="grid text-center justify-center lg:grid-cols-2 lg:mt-10 sm:grid-cols-1">
+                            <div className="grid grid-cols-2 text-center mt-10">
                                 <Link
-                                    className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_commerciaux#printemps"
+                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
+                                    href="/vegetaux_personnels#printemps"
                                     style={{
-                                        // background card Création avec des végétaux issue du commerce - Printemps
+                                        // background card Création avec des végétaux issue du commercer - Printemps
                                         backgroundImage: `url("/images/printemp.jpg")`,
                                     }}
                                 >
                                     Printemps
                                 </Link>
                                 <Link
-                                    className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_commerciaux#ete"
+                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
+                                    href="/vegetaux_personnels#ete"
                                     style={{
-                                        // background card Création avec des végétaux issue du commerce - Été
+                                        // background card Création avec des végétaux issue du commercer - Été
                                         backgroundImage: `url("/images/ete.jpg")`,
                                     }}
                                 >
                                     Été
                                 </Link>
                                 <Link
-                                    className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_commerciaux#automne"
+                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
+                                    href="/vegetaux_personnels#automne"
                                     style={{
-                                        // background card Création avec des végétaux issue du commerce - Automne
+                                        // background card Création avec des végétaux issue du commercer - Automne
                                         backgroundImage: `url("/images/automne.jpg")`,
                                     }}
                                 >
                                     Automne
                                 </Link>
                                 <Link
-                                    className="bg-cover bg-center border rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_commerciaux#hiver"
+                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
+                                    href="/vegetaux_personnels#hiver"
                                     style={{
-                                        // background card Création avec des végétaux issue du commerce - Hivers
+                                        // background card Création avec des végétaux issue du commercer - Hiver
                                         backgroundImage: `url("/images/hiver.jpg")`,
                                     }}
                                 >

@@ -7,7 +7,14 @@ import styles from "../../../styles/ScrollableViewport.module.css";
 export default function Personnels() {
     return (
         <>
-            <div className="fixed top-0 right-0 p-4" style={{ zIndex: 999 }}>
+            <div
+                className="fixed top-0 right-0 bg-cover bg-center p-10  "
+                style={{
+                    zIndex: 999,
+                    // background écran accueil Création avec des végétaux issue de ma production
+                    backgroundImage: `url("/pancarte.png")`,
+                }}
+            >
                 <div>
                     <Link href="/">Accueil</Link>
                 </div>
@@ -24,7 +31,7 @@ export default function Personnels() {
                         style={{ position: "relative" }}
                     >
                         <div
-                            className={`${styles.section} bg-no-repeat bg-center  opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran accueil Création avec des végétaux issue de ma production
                                 backgroundImage: `url("/images/bg_vege_perso.jpg")`,
@@ -50,7 +57,7 @@ export default function Personnels() {
                         id="printemps"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-90`}
                             style={{
                                 // background écran Printemps
                                 backgroundImage: `url("/images/bg_ete.jpg")`,
@@ -85,7 +92,7 @@ export default function Personnels() {
                         id="ete"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Été
                                 backgroundImage: `url("/images/bg_ete.jpg")`,
@@ -119,7 +126,7 @@ export default function Personnels() {
                         id="automne"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-70`}
                             style={{
                                 // background écran Automne
                                 backgroundImage: `url("/images/bg_ete.jpg")`,
