@@ -57,7 +57,7 @@ export default function Personnels() {
                         id="printemps"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-90`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Printemps
                                 backgroundImage: `url("/images/bg_ete.jpg")`,
@@ -126,7 +126,7 @@ export default function Personnels() {
                         id="automne"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-70`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Automne
                                 backgroundImage: `url("/images/bg_ete.jpg")`,
@@ -160,7 +160,7 @@ export default function Personnels() {
                         id="hiver"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Hiver
                                 backgroundImage: `url("/images/bg_ete.jpg")`,

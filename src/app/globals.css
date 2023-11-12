@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
@@ -14,7 +14,7 @@
         --background-start-rgb: 0, 0, 0;
         --background-end-rgb: 0, 0, 0;
     }
-}
+} */
 
 * {
     margin: 0;
@@ -23,18 +23,19 @@
 
 body {
     color: wheat;
-    background: linear-gradient(
-        to bottom,
-        #f4f6f7 0%,
-        #ffbdfd 50%,
-        #ad8196 100%
+
+    background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(123, 0, 118, 1) 73%,
+        rgba(113, 0, 117, 1) 79%
     );
 
     font-family: "Pinyon Script", cursive;
 }
 
 h2 {
-    color: #5a1735;
+    color: white;
 }
 
 h3 {

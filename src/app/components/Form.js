@@ -5,7 +5,7 @@ export default function Form() {
         firstName: "",
         lastName: "",
         email: "",
-        message: "", // Ajoutez le champ message
+        message: "",
     });
 
     const handleChange = (e) => {
@@ -16,7 +16,6 @@ export default function Form() {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Envoi des données du formulaire au serveur (votre API route)
         try {
             const response = await fetch("/api/send-email", {
                 method: "POST",
@@ -26,16 +25,21 @@ export default function Form() {
                 body: JSON.stringify(formData),
             });
 
-            if (response.status === 200) {
-                // Le formulaire a été envoyé avec succès, affichez un message de succès.
+            if (response.ok) {
                 console.log("E-mail envoyé avec succès.");
             } else {
-                // Affichez une erreur en cas d'échec de l'envoi du formulaire.
-                console.error("Erreur lors de l'envoi de l'e-mail.");
+                console.error(
+                    "Erreur lors de l'envoi de l'e-mail. Statut :",
+                    response.status
+                );
+                const responseBody = await response.text();
+                console.error("Contenu de la réponse :", responseBody);
             }
         } catch (error) {
-            // Gérez les erreurs liées à la requête.
-            console.error("Erreur lors de l'envoi de la requête.", error);
+            console.error("Erreur lors de l'envoi de l'e-mail :", error);
+            res.status(500).json({
+                message: "Erreur lors de l'envoi de l'e-mail",
+            });
         }
     };
 
@@ -45,34 +49,46 @@ export default function Form() {
                 className="mt-16"
                 style={{ display: "flex", justifyContent: "center" }}
             >
-                <input
-                    type="text"
-                    name="firstName"
-                    value={formData.firstName}
-                    onChange={handleChange}
-                    placeholder="Prénom"
+                <div
                     style={{
-                        textAlign: "center",
-                        width: 30 + "%",
-                        marginRight: 39 + "px",
-                        borderRadius: "10px",
+                        width: 60 + "%",
+                        height: 5 + "rem",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
                     }}
-                />
-                <input
-                    type="text"
-                    name="lastName"
-                    value={formData.lastName}
-                    onChange={handleChange}
-                    placeholder="Nom"
-                    style={{
-                        textAlign: "center",
-                        width: 30 + "%",
-                        borderRadius: "10px",
-                    }}
-                />
+                >
+                    <input
+                        type="text"
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        placeholder="Prénom"
+                        style={{
+                            textAlign: "center",
+                            width: 30 + "%",
+                            marginRight: 50 + "px",
+                            borderRadius: "10px",
+                            backgroundColor: "transparent",
+                        }}
+                    />
+                    <input
+                        type="text"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        placeholder="Nom"
+                        style={{
+                            textAlign: "center",
+                            width: 30 + "%",
+                            borderRadius: "10px",
+                            backgroundColor: "lightgray",
+                        }}
+                    />
+                </div>
             </div>
             <div
-                className="mt-8"
+                className="mt-2"
                 style={{ display: "flex", justifyContent: "center" }}
             >
                 <input
@@ -83,7 +99,7 @@ export default function Form() {
                     placeholder="Email"
                     style={{
                         textAlign: "center",
-                        width: 64 + "%",
+                        width: 34 + "%",
                         borderRadius: "10px",
                     }}
                 />
@@ -99,16 +115,19 @@ export default function Form() {
                     placeholder="Message"
                     style={{
                         textAlign: "center",
-                        width: 64 + "%",
-                        height: 10 + "rem",
+                        width: 34 + "%",
+                        height: 8 + "rem",
                         borderRadius: "10px",
+                        backgroundColor: "transparent",
                     }}
                 />
             </div>
             <button
-                className="mt-8 text-white"
+                className="mt-8 text-black"
                 type="submit"
-                style={{ width: 100 + "%" }}
+                style={{
+                    width: 100 + "%",
+                }}
             >
                 Soumettre
             </button>

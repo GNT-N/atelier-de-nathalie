@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import ScrollableViewport from "./components/ScrollableViewport";
 import styles from "../../styles/ScrollableViewport.module.css";
+import "../app/globals.css";
 
 export default function Home() {
     const [isMobile, setIsMobile] = useState(false);
@@ -42,7 +43,6 @@ export default function Home() {
                 <div className="my-auto">
                     <Link href="/contact">
                         <div className="border rounded">
-                            {" "}
                             <p className="my-auto px-4 py-2">Me Contacter</p>
                         </div>
                     </Link>
@@ -54,16 +54,16 @@ export default function Home() {
             {isMobile ? (
                 <>
                     <section className={styles.section}>
-                        <div className="font-script flex items-center justify-center min-h-screen">
+                        <div className="font-script mt-16">
                             <div
                                 className="bg-contain bg-center bg-no-repeat p-4 mx-auto"
                                 // bakcground card Création avec des végétaux issue de ma production
                                 style={{
-                                    backgroundImage: `url("/images/flower.png")`,
+                                    backgroundImage: `url("/flower.png")`,
                                 }}
                             >
                                 <Link href="/vegetaux_personnels">
-                                    <h2 className="text-center text-xl mt-4">
+                                    <h2 className="text-center text-xl">
                                         Création avec avec des végétaux issue de
                                         ma production
                                     </h2>
@@ -116,22 +116,22 @@ export default function Home() {
                     </section>
 
                     <section className={styles.section}>
-                        <div className="font-script flex items-center justify-center min-h-screen">
+                        <div className="font-script mt-16">
                             <div
                                 className="bg-contain bg-center bg-no-repeat p-4 mx-auto"
                                 // background card Création avec des végétaux issue du commerce
                                 style={{
-                                    backgroundImage: `url("/images/flower.png")`,
+                                    backgroundImage: `url("/flower.png")`,
                                 }}
                             >
                                 <Link href="/vegetaux_commerciaux">
-                                    <h2 className="text-center text-xl mt-4">
+                                    <h2 className="text-center text-xl">
                                         Création avec des végétaux issue du
                                         commerce
                                     </h2>
                                 </Link>
 
-                                <div className="grid justify-center">
+                                <div className="grid justify-center mt-16">
                                     <Link
                                         className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
                                         href="/vegetaux_personnels#printemps"
@@ -182,10 +182,10 @@ export default function Home() {
                 <section className={styles.section}>
                     <div className="font-script flex items-center grid grid-cols-2 min-h-screen">
                         <div
-                            className="bg-cover h-2/3 w-4/5 p-4 mx-auto"
+                            className="bg-cover bg-center h-2/3 w-4/5 p-4 mx-auto"
                             // bakcground card Création avec des végétaux issue de ma production
                             style={{
-                                backgroundImage: `url("/images/flower.png")`,
+                                backgroundImage: `url("/menu1.png")`,
                             }}
                         >
                             <Link href="/vegetaux_personnels">
@@ -195,7 +195,7 @@ export default function Home() {
                                 </h2>
                             </Link>
 
-                            <div className="grid grid-cols-2 text-center mt-10">
+                            <div className="grid grid-cols-2 text-center mt-16 px-28">
                                 <Link
                                     className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
                                     href="/vegetaux_personnels#printemps"
@@ -240,10 +240,10 @@ export default function Home() {
                         </div>
 
                         <div
-                            className="bg-cover h-2/3 w-4/5 p-4 mx-auto"
+                            className="bg-no-repeat bg-cover bg-center h-2/3 w-4/5 p-4 mx-auto"
                             // background card Création avec des végétaux issue du commerce
                             style={{
-                                backgroundImage: `url("/images/flower.png")`,
+                                backgroundImage: `url("/menu1.png")`,
                             }}
                         >
                             <Link href="/vegetaux_commerciaux">
