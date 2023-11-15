@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../../../styles/Form.module.css";
 
 export default function Form() {
     const [formData, setFormData] = useState({
@@ -37,98 +38,59 @@ export default function Form() {
             }
         } catch (error) {
             console.error("Erreur lors de l'envoi de l'e-mail :", error);
-            res.status(500).json({
-                message: "Erreur lors de l'envoi de l'e-mail",
-            });
         }
     };
 
     return (
-        <form onSubmit={handleSubmit} className="text-black w-2/3">
+        <form
+            onSubmit={handleSubmit}
+            method="post"
+            className={styles.customForm}
+        >
             <div
-                className="mt-16"
-                style={{ display: "flex", justifyContent: "center" }}
+                style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr",
+                    gridColumnGap: "10px",
+                }}
             >
-                <div
-                    style={{
-                        width: 60 + "%",
-                        height: 5 + "rem",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <input
-                        type="text"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        placeholder="Prénom"
-                        style={{
-                            textAlign: "center",
-                            width: 30 + "%",
-                            marginRight: 50 + "px",
-                            borderRadius: "10px",
-                            backgroundColor: "transparent",
-                        }}
-                    />
-                    <input
-                        type="text"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        placeholder="Nom"
-                        style={{
-                            textAlign: "center",
-                            width: 30 + "%",
-                            borderRadius: "10px",
-                            backgroundColor: "lightgray",
-                        }}
-                    />
-                </div>
+                <input
+                    type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    placeholder="Prénom"
+                    className={styles.customInput}
+                />
+                <input
+                    type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    placeholder="Nom"
+                    className={styles.customInput}
+                />
             </div>
-            <div
-                className="mt-2"
-                style={{ display: "flex", justifyContent: "center" }}
-            >
+            <div>
                 <input
                     type="email"
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email"
-                    style={{
-                        textAlign: "center",
-                        width: 34 + "%",
-                        borderRadius: "10px",
-                    }}
+                    className={styles.customInput}
                 />
             </div>
-            <div
-                className="mt-8"
-                style={{ display: "flex", justifyContent: "center" }}
-            >
+            <div>
                 <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Message"
-                    style={{
-                        textAlign: "center",
-                        width: 34 + "%",
-                        height: 8 + "rem",
-                        borderRadius: "10px",
-                        backgroundColor: "transparent",
-                    }}
+                    placeholder="Votre message"
+                    className={styles.customTextarea}
                 />
             </div>
-            <button
-                className="mt-8 text-black"
-                type="submit"
-                style={{
-                    width: 100 + "%",
-                }}
-            >
+            <button type="submit" className={styles.customSubmit}>
                 Soumettre
             </button>
         </form>

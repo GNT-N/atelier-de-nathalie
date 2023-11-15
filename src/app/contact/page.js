@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Form from "../components/Form";
+import styles from "../../../styles/Form.module.css";
 
 export default function Contact() {
     return (
@@ -16,9 +17,9 @@ export default function Contact() {
                 <div className="flex flex-col items-center w-full mt-32">
                     <Form />
                 </div>
-                <div className="border rounded mt-10">
+                <div className={styles.customButton}>
                     <Link href="/">
-                        <h2 className="px-8 text-black">Accueil</h2>
+                        <h2 className="text-gray-500">Accueil</h2>
                     </Link>
                 </div>
             </div>

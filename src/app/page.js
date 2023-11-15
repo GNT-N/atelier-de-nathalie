@@ -9,19 +9,19 @@ export default function Home() {
     const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        // Vérifiez la largeur de l'écran et définissez isMobile en conséquence
+        // Vérifie la largeur de l'écran et définissez isMobile en conséquence
         const checkIsMobile = () => {
             setIsMobile(window.innerWidth <= 768); // Vous pouvez ajuster la largeur de seuil
         };
 
-        // Vérifiez la largeur de l'écran lors du chargement initial
+        // Vérifie la largeur de l'écran lors du chargement initial
         checkIsMobile();
 
         // Ajoutez un écouteur d'événements de redimensionnement pour mettre à jour isMobile
         window.addEventListener("resize", checkIsMobile);
 
         return () => {
-            // Retirez l'écouteur d'événements lors du démontage du composant
+            // Retire l'écouteur d'événements lors du démontage du composant
             window.removeEventListener("resize", checkIsMobile);
         };
     }, []);
@@ -201,7 +201,7 @@ export default function Home() {
                                     href="/vegetaux_personnels#printemps"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Printemps
-                                        backgroundImage: `url("/images/printemp.jpg")`,
+                                        backgroundImage: `url("/images/printemp_min.jpg")`,
                                     }}
                                 >
                                     Printemps
@@ -211,7 +211,7 @@ export default function Home() {
                                     href="/vegetaux_personnels#ete"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Été
-                                        backgroundImage: `url("/images/ete.jpg")`,
+                                        backgroundImage: `url("/images/ete_min.jpg")`,
                                     }}
                                 >
                                     Été
@@ -221,7 +221,7 @@ export default function Home() {
                                     href="/vegetaux_personnels#automne"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Automne
-                                        backgroundImage: `url("/images/automne.jpg")`,
+                                        backgroundImage: `url("/images/automne_min.jpg")`,
                                     }}
                                 >
                                     Automne
@@ -231,7 +231,7 @@ export default function Home() {
                                     href="/vegetaux_personnels#hiver"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Hiver
-                                        backgroundImage: `url("/images/hiver.jpg")`,
+                                        backgroundImage: `url("/images/hiver_min.jpg")`,
                                     }}
                                 >
                                     Hiver
@@ -252,43 +252,43 @@ export default function Home() {
                                 </h2>
                             </Link>
 
-                            <div className="grid grid-cols-2 text-center mt-10">
+                            <div className="grid grid-cols-2 text-center mt-16 px-28">
                                 <Link
-                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_personnels#printemps"
+                                    className="bg-cover rounded flex items-center justify-center text-white m-2 p-16"
+                                    href="/vegetaux_commerciaux#printemps"
                                     style={{
-                                        // background card Création avec des végétaux issue du commercer - Printemps
-                                        backgroundImage: `url("/images/printemp.jpg")`,
+                                        // background card Création avec des végétaux issue de ma production - Printemps
+                                        backgroundImage: `url("/images/printemp_min2.jpg")`,
                                     }}
                                 >
                                     Printemps
                                 </Link>
                                 <Link
                                     className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_personnels#ete"
+                                    href="/vegetaux_commerciaux#ete"
                                     style={{
-                                        // background card Création avec des végétaux issue du commercer - Été
-                                        backgroundImage: `url("/images/ete.jpg")`,
+                                        // background card Création avec des végétaux issue de ma production - Été
+                                        backgroundImage: `url("/images/ete_min2.jpg")`,
                                     }}
                                 >
                                     Été
                                 </Link>
                                 <Link
                                     className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_personnels#automne"
+                                    href="/vegetaux_commerciaux#automne"
                                     style={{
-                                        // background card Création avec des végétaux issue du commercer - Automne
-                                        backgroundImage: `url("/images/automne.jpg")`,
+                                        // background card Création avec des végétaux issue de ma production - Automne
+                                        backgroundImage: `url("/images/automne_min2.jpg")`,
                                     }}
                                 >
                                     Automne
                                 </Link>
                                 <Link
                                     className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_personnels#hiver"
+                                    href="/vegetaux_commerciaux#hiver"
                                     style={{
-                                        // background card Création avec des végétaux issue du commercer - Hiver
-                                        backgroundImage: `url("/images/hiver.jpg")`,
+                                        // background card Création avec des végétaux issue de ma production - Hiver
+                                        backgroundImage: `url("/images/hiver_min2.jpg")`,
                                     }}
                                 >
                                     Hiver

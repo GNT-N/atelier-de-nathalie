@@ -1,0 +1,54 @@
+.customForm {
+    margin-top: 80px;
+    color: wheat !important;
+}
+
+.customInput {
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: gray;
+}
+
+.customInput::placeholder {
+    color: wheat;
+}
+
+.customTextarea {
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 30px;
+    border: 1px solid wheat;
+    border-radius: 10px;
+}
+
+.customTextarea::placeholder {
+    color: wheat;
+}
+
+.customSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    min-height: 30px;
+    color: gray;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.customButton {
+    margin-top: 30px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}

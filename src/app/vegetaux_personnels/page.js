@@ -34,7 +34,7 @@ export default function Personnels() {
                             className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran accueil Création avec des végétaux issue de ma production
-                                backgroundImage: `url("/images/bg_vege_perso.jpg")`,
+                                backgroundImage: `url("/images/bg_vege_perso3.jpg")`,
                             }}
                         ></div>
                         <h1
@@ -60,7 +60,7 @@ export default function Personnels() {
                             className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Printemps
-                                backgroundImage: `url("/images/bg_ete.jpg")`,
+                                backgroundImage: `url("/images/printemp_min.jpg")`,
                             }}
                         ></div>
                         <h2
@@ -95,7 +95,7 @@ export default function Personnels() {
                             className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Été
-                                backgroundImage: `url("/images/bg_ete.jpg")`,
+                                backgroundImage: `url("/images/ete_min.jpg")`,
                             }}
                         ></div>
                         <h2
@@ -129,7 +129,7 @@ export default function Personnels() {
                             className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Automne
-                                backgroundImage: `url("/images/bg_ete.jpg")`,
+                                backgroundImage: `url("/images/automne_min.jpg")`,
                             }}
                         ></div>
                         <h2
@@ -163,7 +163,7 @@ export default function Personnels() {
                             className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Hiver
-                                backgroundImage: `url("/images/bg_ete.jpg")`,
+                                backgroundImage: `url("/images/hiver_min.jpg")`,
                             }}
                         ></div>
                         <h2

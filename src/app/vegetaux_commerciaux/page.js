@@ -56,10 +56,10 @@ export default function Commerciaux() {
                         id="printemps"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover opacity-80`}
                             style={{
                                 // background écran Printemps
-                                backgroundImage: `url("/images/bg_ete.jpg")`,
+                                backgroundImage: `url("/images/printemp_min2.jpg")`,
                             }}
                         ></div>
                         <h2
@@ -90,10 +90,10 @@ export default function Commerciaux() {
                         id="ete"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Été
-                                backgroundImage: `url("/images/bg_ete.jpg")`,
+                                backgroundImage: `url("/images/ete_min2.jpg")`,
                             }}
                         ></div>
                         <h2
@@ -124,10 +124,10 @@ export default function Commerciaux() {
                         id="automne"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Automne
-                                backgroundImage: `url("/images/bg_ete.jpg")`,
+                                backgroundImage: `url("/images/automne_min2.jpg")`,
                             }}
                         ></div>
                         <h2
@@ -158,10 +158,10 @@ export default function Commerciaux() {
                         id="hiver"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-60`}
+                            className={`${styles.section} bg-cover bg-center opacity-80`}
                             style={{
                                 // background écran Hiver
-                                backgroundImage: `url("/images/bg_ete.jpg")`,
+                                backgroundImage: `url("/images/hiver_min2.jpg")`,
                             }}
                         ></div>
                         <h2
