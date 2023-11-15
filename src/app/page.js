@@ -75,7 +75,7 @@ export default function Home() {
                                         href="/vegetaux_personnels#printemps"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Printemps
-                                            backgroundImage: `url("/images/printemp.jpg")`,
+                                            backgroundImage: `url("/images/printemp_min.jpg")`,
                                         }}
                                     >
                                         <h3>Printemps</h3>
@@ -85,7 +85,7 @@ export default function Home() {
                                         href="/vegetaux_personnels#ete"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Été
-                                            backgroundImage: `url("/images/ete.jpg")`,
+                                            backgroundImage: `url("/images/ete_min.jpg")`,
                                         }}
                                     >
                                         <h3>Été</h3>
@@ -95,7 +95,7 @@ export default function Home() {
                                         href="/vegetaux_personnels#automne"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Automne
-                                            backgroundImage: `url("/images/automne.jpg")`,
+                                            backgroundImage: `url("/images/automne_min.jpg")`,
                                         }}
                                     >
                                         <h3>Automne</h3>
@@ -105,7 +105,7 @@ export default function Home() {
                                         href="/vegetaux_personnels#hiver"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Hiver
-                                            backgroundImage: `url("/images/hiver.jpg")`,
+                                            backgroundImage: `url("/images/hiver_min.jpg")`,
                                         }}
                                     >
                                         <h3>Hiver</h3>
@@ -137,7 +137,7 @@ export default function Home() {
                                         href="/vegetaux_personnels#printemps"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Printemps
-                                            backgroundImage: `url("/images/printemp.jpg")`,
+                                            backgroundImage: `url("/images/printemp_min2.jpg")`,
                                         }}
                                     >
                                         Printemps
@@ -147,7 +147,7 @@ export default function Home() {
                                         href="/vegetaux_personnels#ete"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Été
-                                            backgroundImage: `url("/images/ete.jpg")`,
+                                            backgroundImage: `url("/images/ete_min2.jpg")`,
                                         }}
                                     >
                                         Été
@@ -157,7 +157,7 @@ export default function Home() {
                                         href="/vegetaux_personnels#automne"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Automne
-                                            backgroundImage: `url("/images/automne.jpg")`,
+                                            backgroundImage: `url("/images/automne_min2.jpg")`,
                                         }}
                                     >
                                         Automne
@@ -167,7 +167,7 @@ export default function Home() {
                                         href="/vegetaux_personnels#hiver"
                                         style={{
                                             // background card Création avec des végétaux issue de ma production - Hiver
-                                            backgroundImage: `url("/images/hiver.jpg")`,
+                                            backgroundImage: `url("/images/hiver_min2.jpg")`,
                                         }}
                                     >
                                         Hiver

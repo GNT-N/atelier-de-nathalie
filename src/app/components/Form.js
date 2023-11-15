@@ -47,13 +47,7 @@ export default function Form() {
             method="post"
             className={styles.customForm}
         >
-            <div
-                style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                    gridColumnGap: "10px",
-                }}
-            >
+            <div className={styles.customDiv}>
                 <input
                     type="text"
                     name="firstName"
@@ -91,7 +85,7 @@ export default function Form() {
                 />
             </div>
             <button type="submit" className={styles.customSubmit}>
-                Soumettre
+                Envoyer
             </button>
         </form>
     );

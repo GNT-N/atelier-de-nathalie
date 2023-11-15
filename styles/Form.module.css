@@ -3,6 +3,12 @@
     color: wheat !important;
 }
 
+.customDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
 .customInput {
     width: 100%;
     margin-top: 30px;
@@ -24,6 +30,8 @@
     margin-top: 30px;
     border: 1px solid wheat;
     border-radius: 10px;
+    background-color: transparent;
+    color: gray;
 }
 
 .customTextarea::placeholder {
@@ -51,4 +59,45 @@
     padding-right: 30px;
     border: 1px solid lightgray;
     border-radius: 5px;
+}
+
+@media (max-height: 640px) {
+    .customForm {
+        margin-top: 25px;
+        color: wheat !important;
+    }
+
+    .customDiv {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .customInput {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customTextarea {
+        width: 80%;
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customSubmit {
+        margin-top: 100px;
+        width: 50%;
+    }
+
+    .customButton {
+        margin-top: 40px;
+    }
 }
