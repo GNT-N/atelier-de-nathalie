@@ -10,8 +10,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
-            <body className={pinyonScript.className}>{children}</body>
-        </html>
+        <>
+            <head>
+                <meta
+                    name="L'Atelier De Nathalie"
+                    content="Blog de différentes compositions fleural"
+                />
+                <link rel="icon" href="/favicon.png" />
+                <title>L'Atelier De Nathalie</title>
+            </head>
+            <html lang="en">
+                <body className={pinyonScript.className}>{children}</body>
+            </html>
+        </>
     );
 }

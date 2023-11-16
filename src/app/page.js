@@ -64,8 +64,8 @@ export default function Home() {
                             >
                                 <Link href="/vegetaux_personnels">
                                     <h2 className="text-center text-xl">
-                                        Création avec avec des végétaux issue de
-                                        ma production
+                                        Création avec des végétaux issue de ma
+                                        production
                                     </h2>
                                 </Link>
 
@@ -189,13 +189,13 @@ export default function Home() {
                             }}
                         >
                             <Link href="/vegetaux_personnels">
-                                <h2 className="text-center text-2xl mt-10">
-                                    Création avec avec des végétaux issue de ma
+                                <h2 className="text-center text-2xl text-black mt-10">
+                                    Création avec des végétaux issue de ma
                                     production
                                 </h2>
                             </Link>
 
-                            <div className="grid grid-cols-2 text-center mt-16 px-28">
+                            <div className="grid grid-cols-4 gap-12 text-center mt-32 px-28">
                                 <Link
                                     className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
                                     href="/vegetaux_personnels#printemps"

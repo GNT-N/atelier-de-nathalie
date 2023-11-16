@@ -8,7 +8,7 @@ export default function Personnels() {
     return (
         <>
             <div
-                className="fixed top-0 right-0 bg-cover bg-center p-10  "
+                className="fixed top-2 right-0 bg-cover bg-center p-10  "
                 style={{
                     zIndex: 999,
                     // background écran accueil Création avec des végétaux issue de ma production
@@ -18,6 +18,15 @@ export default function Personnels() {
                 <div>
                     <Link href="/">Accueil</Link>
                 </div>
+            </div>
+            <div
+                className="fixed top-24 right-0 bg-cover bg-center p-10  "
+                style={{
+                    zIndex: 999,
+                    // background écran accueil Création avec des végétaux issue de ma production
+                    backgroundImage: `url("/pancarte.png")`,
+                }}
+            >
                 <div>
                     <Link href="/contact">Contact</Link>
                 </div>
