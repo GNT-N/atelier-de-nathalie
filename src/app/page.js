@@ -11,7 +11,7 @@ export default function Home() {
     useEffect(() => {
         // Vérifie la largeur de l'écran et définissez isMobile en conséquence
         const checkIsMobile = () => {
-            setIsMobile(window.innerWidth <= 768); // Vous pouvez ajuster la largeur de seuil
+            setIsMobile(window.innerWidth <= 768);
         };
 
         // Vérifie la largeur de l'écran lors du chargement initial
@@ -180,28 +180,28 @@ export default function Home() {
             ) : (
                 // Le contenu pour les écrans PC
                 <section className={styles.section}>
-                    <div className="font-script flex items-center grid grid-cols-2 min-h-screen">
+                    <div className="font-script flex items-center grid grid-cols-1 min-h-screen">
                         <div
-                            className="bg-cover bg-center h-2/3 w-4/5 p-4 mx-auto"
+                            className="bg-cover bg-center h-2/3 w-3/5 p-4 mx-auto"
                             // bakcground card Création avec des végétaux issue de ma production
-                            style={{
-                                backgroundImage: `url("/menu1.png")`,
-                            }}
+                            // style={{
+                            //     backgroundImage: `url("/menu1.png")`,
+                            // }}
                         >
                             <Link href="/vegetaux_personnels">
-                                <h2 className="text-center text-2xl text-black mt-10">
-                                    Création avec des végétaux issue de ma
-                                    production
+                                <h2 className="text-center text-4xl text-black mt-10">
+                                    Mes Création
                                 </h2>
                             </Link>
 
-                            <div className="grid grid-cols-4 gap-12 text-center mt-32 px-28">
+                            <div className="grid grid-cols-4 text-center mt-10 px-28">
                                 <Link
                                     className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
                                     href="/vegetaux_personnels#printemps"
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Printemps
                                         backgroundImage: `url("/images/printemp_min.jpg")`,
+                                        opacity: 0.8,
                                     }}
                                 >
                                     Printemps
@@ -212,6 +212,7 @@ export default function Home() {
                                     style={{
                                         // background card Création avec des végétaux issue de ma production - Été
                                         backgroundImage: `url("/images/ete_min.jpg")`,
+                                        backgroundColor: `rgba(0, 0, 0, 0.8)`,
                                     }}
                                 >
                                     Été
@@ -239,8 +240,8 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div
-                            className="bg-no-repeat bg-cover bg-center h-2/3 w-4/5 p-4 mx-auto"
+                        {/* <div
+                            className="bg-cover bg-center h-2/3 w-4/5 p-4 mx-auto"
                             // background card Création avec des végétaux issue du commerce
                             style={{
                                 backgroundImage: `url("/menu1.png")`,
@@ -294,7 +295,7 @@ export default function Home() {
                                     Hiver
                                 </Link>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
             )}

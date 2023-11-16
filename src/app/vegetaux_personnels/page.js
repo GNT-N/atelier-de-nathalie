@@ -40,10 +40,11 @@ export default function Personnels() {
                         style={{ position: "relative" }}
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-80`}
+                            className={`${styles.section} bg-cover bg-center`}
                             style={{
                                 // background écran accueil Création avec des végétaux issue de ma production
                                 backgroundImage: `url("/images/bg_vege_perso3.jpg")`,
+                                filter: "brightness(0.8)",
                             }}
                         ></div>
                         <h1
@@ -66,10 +67,11 @@ export default function Personnels() {
                         id="printemps"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-80`}
+                            className={`${styles.section} bg-cover bg-center`}
                             style={{
                                 // background écran Printemps
                                 backgroundImage: `url("/images/printemp_min.jpg")`,
+                                filter: "brightness(0.8)",
                             }}
                         ></div>
                         <h2
@@ -101,10 +103,11 @@ export default function Personnels() {
                         id="ete"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-80`}
+                            className={`${styles.section} bg-cover bg-center`}
                             style={{
                                 // background écran Été
                                 backgroundImage: `url("/images/ete_min.jpg")`,
+                                filter: "brightness(0.8)",
                             }}
                         ></div>
                         <h2
@@ -135,10 +138,11 @@ export default function Personnels() {
                         id="automne"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-80`}
+                            className={`${styles.section} bg-cover bg-center`}
                             style={{
                                 // background écran Automne
                                 backgroundImage: `url("/images/automne_min.jpg")`,
+                                filter: "brightness(0.8)",
                             }}
                         ></div>
                         <h2
@@ -169,10 +173,11 @@ export default function Personnels() {
                         id="hiver"
                     >
                         <div
-                            className={`${styles.section} bg-cover bg-center opacity-80`}
+                            className={`${styles.section} bg-cover bg-center`}
                             style={{
                                 // background écran Hiver
                                 backgroundImage: `url("/images/hiver_min.jpg")`,
+                                filter: "brightness(0.8)",
                             }}
                         ></div>
                         <h2
