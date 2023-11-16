@@ -1,3 +1,19 @@
+.successMessage {
+    color: green;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.errorMessage {
+    color: red;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.formWithMargin {
+    margin-top: 10px;
+}
+
 .customForm {
     margin-top: 80px;
     color: wheat !important;
@@ -62,6 +78,16 @@
 }
 
 @media (max-height: 640px) {
+    .successMessage {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .errorMessage {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
     .customForm {
         margin-top: 25px;
         color: wheat !important;
@@ -98,6 +124,6 @@
     }
 
     .customButton {
-        margin-top: 40px;
+        margin-top: 15px;
     }
 }
