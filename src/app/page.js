@@ -64,8 +64,7 @@ export default function Home() {
                             >
                                 <Link href="/vegetaux_personnels">
                                     <h2 className="text-center text-xl">
-                                        Création avec des végétaux issue de ma
-                                        production
+                                        Mes Créations
                                     </h2>
                                 </Link>
 
@@ -114,68 +113,6 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-
-                    <section className={styles.section}>
-                        <div className="font-script mt-16">
-                            <div
-                                className="bg-contain bg-center bg-no-repeat p-4 mx-auto"
-                                // background card Création avec des végétaux issue du commerce
-                                style={{
-                                    backgroundImage: `url("/flower.png")`,
-                                }}
-                            >
-                                <Link href="/vegetaux_commerciaux">
-                                    <h2 className="text-center text-xl">
-                                        Création avec des végétaux issue du
-                                        commerce
-                                    </h2>
-                                </Link>
-
-                                <div className="grid justify-center mt-16">
-                                    <Link
-                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
-                                        href="/vegetaux_personnels#printemps"
-                                        style={{
-                                            // background card Création avec des végétaux issue de ma production - Printemps
-                                            backgroundImage: `url("/images/printemp_min2.jpg")`,
-                                        }}
-                                    >
-                                        Printemps
-                                    </Link>
-                                    <Link
-                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
-                                        href="/vegetaux_personnels#ete"
-                                        style={{
-                                            // background card Création avec des végétaux issue de ma production - Été
-                                            backgroundImage: `url("/images/ete_min2.jpg")`,
-                                        }}
-                                    >
-                                        Été
-                                    </Link>
-                                    <Link
-                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
-                                        href="/vegetaux_personnels#automne"
-                                        style={{
-                                            // background card Création avec des végétaux issue de ma production - Automne
-                                            backgroundImage: `url("/images/automne_min2.jpg")`,
-                                        }}
-                                    >
-                                        Automne
-                                    </Link>
-                                    <Link
-                                        className="bg-cover bg-center border rounded text-center m-2 sm: py-8 px-16"
-                                        href="/vegetaux_personnels#hiver"
-                                        style={{
-                                            // background card Création avec des végétaux issue de ma production - Hiver
-                                            backgroundImage: `url("/images/hiver_min2.jpg")`,
-                                        }}
-                                    >
-                                        Hiver
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
                 </>
             ) : (
                 // Le contenu pour les écrans PC
@@ -184,17 +121,17 @@ export default function Home() {
                         <div
                             className="bg-cover bg-center h-2/3 w-3/5 p-4 mx-auto"
                             // bakcground card Création avec des végétaux issue de ma production
-                            // style={{
-                            //     backgroundImage: `url("/menu1.png")`,
-                            // }}
+                            style={{
+                                backgroundImage: `url("/menu1.png")`,
+                            }}
                         >
                             <Link href="/vegetaux_personnels">
-                                <h2 className="text-center text-4xl text-black mt-10">
-                                    Mes Création
+                                <h2 className="text-center text-4xl text-black mt-32">
+                                    Mes Créations
                                 </h2>
                             </Link>
 
-                            <div className="grid grid-cols-4 text-center mt-10 px-28">
+                            <div className="grid grid-cols-2 gap-8 text-center mt-10 px-28">
                                 <Link
                                     className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
                                     href="/vegetaux_personnels#printemps"
@@ -239,63 +176,6 @@ export default function Home() {
                                 </Link>
                             </div>
                         </div>
-
-                        {/* <div
-                            className="bg-cover bg-center h-2/3 w-4/5 p-4 mx-auto"
-                            // background card Création avec des végétaux issue du commerce
-                            style={{
-                                backgroundImage: `url("/menu1.png")`,
-                            }}
-                        >
-                            <Link href="/vegetaux_commerciaux">
-                                <h2 className="text-center text-2xl mt-10">
-                                    Création avec des végétaux issue du commerce
-                                </h2>
-                            </Link>
-
-                            <div className="grid grid-cols-2 text-center mt-16 px-28">
-                                <Link
-                                    className="bg-cover rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_commerciaux#printemps"
-                                    style={{
-                                        // background card Création avec des végétaux issue de ma production - Printemps
-                                        backgroundImage: `url("/images/printemp_min2.jpg")`,
-                                    }}
-                                >
-                                    Printemps
-                                </Link>
-                                <Link
-                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_commerciaux#ete"
-                                    style={{
-                                        // background card Création avec des végétaux issue de ma production - Été
-                                        backgroundImage: `url("/images/ete_min2.jpg")`,
-                                    }}
-                                >
-                                    Été
-                                </Link>
-                                <Link
-                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_commerciaux#automne"
-                                    style={{
-                                        // background card Création avec des végétaux issue de ma production - Automne
-                                        backgroundImage: `url("/images/automne_min2.jpg")`,
-                                    }}
-                                >
-                                    Automne
-                                </Link>
-                                <Link
-                                    className="bg-cover bg-center rounded flex items-center justify-center text-white m-2 p-16"
-                                    href="/vegetaux_commerciaux#hiver"
-                                    style={{
-                                        // background card Création avec des végétaux issue de ma production - Hiver
-                                        backgroundImage: `url("/images/hiver_min2.jpg")`,
-                                    }}
-                                >
-                                    Hiver
-                                </Link>
-                            </div>
-                        </div> */}
                     </div>
                 </section>
             )}
