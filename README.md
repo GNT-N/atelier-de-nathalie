@@ -25,7 +25,7 @@ npm install fullpage.js@^4.0.20
 ```
 
 ```bash
-npm install gsap@^3.12.4 next@^14.2.13 
+npm install gsap@^3.12.4
 ```
 
 ```bash
